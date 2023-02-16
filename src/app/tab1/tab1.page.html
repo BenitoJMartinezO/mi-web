@@ -1,17 +1,196 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div class="container">
+    <div class="row">
+      <ion-img src="https://docs-demo.ionic.io/assets/madison.jpg"
+        alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+      <div>
+        <ion-item color="secondary">
+          <ion-label>BENITO JOSE MARTINEZ OSORNIO</ion-label>
+        </ion-item>
+      </div>
+      <div>
+        <ion-grid  [fixed]="true">
+          <ion-row>
+            <ion-col size="12" size-sm="3" offset-sm="2">
+              <div>
+                <ion-list>
+                  <ion-list-header>
+                    <ion-label>Frameworks</ion-label>
+                  </ion-list-header>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
+                    </ion-avatar>
+                    <ion-label>
+                      &nbsp;&nbsp;&nbsp;JavaScript
+                    </ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://www.it-schulungen.com/images/seminar_images/2021-c-sharp-logo.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;C#</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;Java</ion-label>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </ion-col>
+            <ion-col size="12" size-sm="3">
+              <div>
+                <ion-list>
+                  <ion-list-header>
+                    <ion-label>Lenguajes de programación</ion-label>
+                  </ion-list-header>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://i.ytimg.com/vi/mog8EKQX5HI/maxresdefault.jpg" />
+                    </ion-avatar>
+                    <ion-label>
+                      &nbsp;&nbsp;&nbsp;Angular
+                    </ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head" src="https://midu.dev/images/tags/node.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;Node</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://damiandeluca.com.ar/wp-content/uploads/2019/10/ionic-logo.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;Ionic</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="data:image/png;base64,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" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;.Net Core</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="data:image/png;base64,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" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;Spring boot</ion-label>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </ion-col>
+            <ion-col size="12" size-sm="3">
+              <div>
+                <ion-list>
+                  <ion-list-header>
+                    <ion-label>Bases de datos</ion-label>
+                  </ion-list-header>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://live.mrf.io/statics/i/ps/www.muylinux.com/wp-content/uploads/2019/01/mongodb.png?width=1200&enable=upscale" />
+                    </ion-avatar>
+                    <ion-label>
+                      &nbsp;&nbsp;&nbsp;Mongodb
+                    </ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head" src="https://www.ciset.es/images/Glosario/mysql.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;MySql</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://ipappg.edu.pe/blog/wp-content/uploads/2022/05/mssqlserver.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;SQL Server</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="http://3.bp.blogspot.com/-Ix85v0VprM8/Uv5MYLeNESI/AAAAAAAAJMo/6byKJmT4tx0/s1600/redis318x260_1.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;Redis</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-avatar>
+                      <img alt="Silhouette of a person's head"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Apache_kafka.svg/1200px-Apache_kafka.svg.png" />
+                    </ion-avatar>
+                    <ion-label>&nbsp;&nbsp;&nbsp;Kafka</ion-label>
+                  </ion-item>
+                </ion-list>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <div>
+        <ion-item color="secondary">
+          <ion-label>Proyectos</ion-label>
+        </ion-item>
+        <ion-slides pager="true">
+          <ion-slide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+          <ion-slide>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Card Title</ion-card-title>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              </ion-card-header>
+            
+              <ion-card-content>
+                Here's a small text description for the card content. Nothing more, nothing less.
+              </ion-card-content>
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+      </div>
+
+
+
+
+    </div>
+  </div>
 </ion-content>
